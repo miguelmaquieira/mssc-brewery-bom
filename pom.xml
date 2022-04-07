@@ -42,8 +42,10 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
-        <jaxb.version>2.3.1</jaxb.version>
-        <awaitility.version>4.2.0</awaitility.version>
+        <jaxb-api.version>2.3.1</jaxb-api.version>
+        <jaxb-core.version>2.3.0</jaxb-core.version>
+        <jaxb-impl.version>3.0.2</jaxb-impl.version>
+        <awaitility.version>2.3.3</awaitility.version>
     </properties>
 
     <dependencies>
@@ -126,17 +128,17 @@
             <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
-                <version>${jaxb.version}</version>
+                <version>${jaxb-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-core</artifactId>
-                <version>${jaxb.version}</version>
+                <version>${jaxb-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>
-                <version>${jaxb.version}</version>
+                <version>${jaxb-impl.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.awaitility</groupId>
